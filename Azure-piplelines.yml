@@ -14,6 +14,7 @@ variables:
   loadTestResourceGroup: 'RG_LearnAz'
   location: 'EAST US'
    
+stages:
 - stage: LoadTest
   displayName: Load Test
   dependsOn: Deploy
@@ -27,7 +28,7 @@ variables:
     - task: AzureLoadTest@1
       inputs:
         azureSubscription: $(serviceConnection)
-        loadTestConfigFile: 'SampleApp.yaml'
+        loadTestConfigFile: 'AzEngInstance.yaml'
         resourceGroup: $(loadTestResourceGroup)
         loadTestResource: $(loadTestResource)
 
