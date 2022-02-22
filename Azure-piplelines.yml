@@ -17,8 +17,6 @@ variables:
 stages:
 - stage: LoadTest
   displayName: Load Test
-  dependsOn: Deploy
-  condition: succeeded()
   jobs:
   - job: LoadTest
     displayName: Load Test
