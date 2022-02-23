@@ -7,7 +7,7 @@ trigger:
 - main
 
 variables:
-  webAppName: 'AZGitDemo'
+  webAppName: 'AZGitDemowithAzPipeline'
   serviceConnection: 'AzureLoadTestRG'
   azureSubscriptionId: '2ecf5175-979a-49a5-9dfa-26f69a0db4d9'
   loadTestResource: 'Jpetstore_LearnAz'
